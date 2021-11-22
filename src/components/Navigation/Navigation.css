@@ -1,0 +1,127 @@
+.Navigation{
+    position: fixed;
+    z-index: 2;
+    height: 4rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 1px 25px -5px #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 1rem;
+}
+.web_nav-logo_sec{
+  display: flex;
+  align-items: center;
+}
+.web_menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.web_nav-logo{
+    fill: #000;
+    width: 2.7rem;
+    height: 3rem;
+}
+.web_nav-logo-text{
+    font-size: 12px;
+    font-weight: 600;
+    width: 5rem;
+    padding: 0 0 0 .5rem;
+    margin: 0 0 0 .5rem;
+    line-height: .8rem;
+    border-left: 1px solid #99989a;
+}
+.web_nav-list_sec{
+    display: none;
+    flex-wrap: wrap;
+    width: 40rem;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.web-list_wrapper{
+    text-decoration: none;
+    cursor: pointer;
+}
+.web_nav-list_item{
+    margin: 0;
+    color: black;
+    font-weight: 500;
+}
+.web_nav-list_item:hover{
+    font-weight: 600;
+}
+.webactive{
+    font-weight: 600;
+    border-bottom: 5px solid #2F54EB;
+}
+
+@media (min-width: 40rem){
+    .Navigation{
+        height: 5rem;
+        padding: 0.2rem 2rem;
+    }
+    .web_menu-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .web_nav-logo{
+        width: 4rem;
+        height: 2rem;
+        fill: #2b2b2b;
+    }
+    .web_nav-logo-text{
+        font-size: 15px;
+        font-weight: 600;
+        width: 4rem;
+        line-height: 1rem;
+    }
+}
+
+@media (min-width: 60rem){
+    .web_menu-btn{
+        display: none;
+    }
+    .web_nav-list_sec{
+        display: flex;
+        width: 42rem;
+        font-size: 16px;
+    } 
+}
+
+@media (min-width: 80rem){
+    .Navigation{
+        height: 5rem;
+        padding: 0.2rem 3rem;
+    }
+    .web_nav-logo{
+        width: 4rem;
+        height: 2rem;
+        fill: #2b2b2b;
+    }
+    .web_nav-logo-text{
+        font-size: 15px;
+        font-weight: 600;
+        width: 4rem;
+        padding: 0 0 0 .5rem;
+        margin: 0 0 0 .5rem;
+        line-height: 1rem;
+    }
+    .web_nav-list_sec{
+        width: 50rem;
+        font-size: 16px;
+    } 
+}
