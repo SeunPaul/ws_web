@@ -21,7 +21,7 @@ const Navigation = ({page})=>{
     return(
         <>
         <div className="Navigation">
-            { menuOpen && <Sidebar toggleMenu={toggleMenu} menuOpen={menuOpen} page={page}/> }
+            { menuOpen && <Sidebar toggleMenu={toggleMenu} page={page}/> }
             <div className="web_nav-logo_sec">
                 <img className="web_menu-btn" src={menu} onClick={toggleMenu} alt=""/>
                 <Logo className="web_nav-logo"/>

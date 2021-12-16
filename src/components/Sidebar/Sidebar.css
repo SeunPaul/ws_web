@@ -14,7 +14,7 @@
     width: 15rem;
     background: #fff;
     padding: 0rem 2rem;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .show-sidebar{
     left: 0;

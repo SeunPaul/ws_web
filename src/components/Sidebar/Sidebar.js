@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from '../../assets/svg/wsSvgLogo.svg';
 import cancel from '../../assets/img/cancel.png';
 import './Sidebar.css'
 
-const Sidebar = ({ toggleMenu, menuOpen, page })=>{
+const Sidebar = ({ toggleMenu, page })=>{
     const [navPage, setNavPage] = useState(page)
     const [showSidebar, setShowSidebar] = useState(false);
 
@@ -15,7 +15,7 @@ const Sidebar = ({ toggleMenu, menuOpen, page })=>{
         setTimeout(()=>{
             history.push(`/${newPage}`)
             toggleMenu()
-        }, 500)
+        }, 300)
     }
 
     const onChangePage = (newPage)=>{
@@ -27,7 +27,7 @@ const Sidebar = ({ toggleMenu, menuOpen, page })=>{
     useEffect(()=>{
         setTimeout(()=>{
             setShowSidebar(true)
-        }, 50)
+        }, 30)
     }, [])
     return(
         <div className="Sidebar">

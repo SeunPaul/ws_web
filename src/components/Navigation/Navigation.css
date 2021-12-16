@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.2rem 1rem;
+    padding: 0rem 1rem;
 }
 .web_nav-logo_sec{
   display: flex;
@@ -67,7 +67,7 @@
 @media (min-width: 40rem){
     .Navigation{
         height: 5rem;
-        padding: 0.2rem 2rem;
+        padding: 0rem 2rem;
     }
     .web_menu-btn {
         display: flex;

@@ -1,0 +1,459 @@
+.home-landing{
+    position: relative;
+    height: 700px;
+    background: linear-gradient(360deg, rgba(255, 255, 255, 1) 40%, rgba(250, 250, 250, 0.9)), url("../../assets/img/pattern.jpg");
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0rem 1rem;
+}
+.home-landing .welcome-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+}
+.home-landing .welcome-text{
+    margin: 30px 0px;
+    font-size: 25px;
+    text-align: center;
+}
+.home-landing .contact-us-btn{
+    background: #2F54EB;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.hero-section{
+    position: relative;
+    top: 50px;
+    height: 100%;
+}
+.hero-img{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/img/lanre.png");
+    background-size: cover;
+    background-position: -70px center;
+    background-repeat: no-repeat;
+}
+.model-item{
+    position: absolute;
+    border: 1px solid #EEE;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+}
+.model-item:hover{
+    box-shadow: 0px 1px 10px #DDD;
+}
+.model-item .icon-wrapper .icon{
+    height: 17px;
+}
+.model-item.item1{
+    top: 20px;
+    left: 10px;
+    width: 70px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    font-weight: 600;
+    font-size: 10px;
+}
+.model-item.item1 .icon-wrapper{
+    border-radius: 10px;
+    background: #32533D;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+}
+.model-item.item2{
+    top: 20px;
+    right: 0;
+    width: 70px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 5px 0px 5px;
+    font-weight: 600;
+    font-size: 10px;
+}
+.model-item.item2 .icon-wrapper{
+    border-radius: 10px;
+    background: #FF5A5F;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+}
+.model-item.item3{
+    left: 0;
+    bottom: 40px;
+    width: 150px;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0px 17px 0px 20px;
+    font-weight: 600;
+    font-size: 10px;
+}
+.model-item.item3 .icon-wrapper{
+    border-radius: 10px;
+    background: #5CC8FF;
+    width: 60px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.model-item.item4{
+    right: 0;
+    bottom: 130px;
+    width: 120px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 17px 2px 17px;
+    font-weight: 600;
+    font-size: 11px;
+}
+.model-item.item4 .icon-wrapper{
+    border-radius: 10px;
+    background: #2F54EB;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-what-we-do,
+.home-waltersamite,
+.home-benefits{
+    padding-top: 100px;
+}
+.section-description{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.section-description h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+.section-description-bar{
+    width: 48px;
+    height: 5px;
+    background: #2F54EB;
+    margin: 0px 0px 8px 4px; 
+}
+.section-subdescription{
+    text-align: center;
+    font-style: italic;
+}
+.what-we-do-wrapper{
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.what-we-do-plaque{
+    position: relative;
+    width: 300px;
+    text-align: center;
+    background: #FBFBFF;
+    padding: 50px 20px 20px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-bottom: 100px; 
+}
+.what-we-do-plaque .icon-wrapper{
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+.what-we-do-plaque.plaque1 .icon-wrapper{
+    background: #FF5A5F;
+}
+.what-we-do-plaque.plaque2 .icon-wrapper{
+    background: #32533D;
+}
+.what-we-do-plaque.plaque3 .icon-wrapper{
+    background: #2F54EB;
+}
+.what-we-do-plaque-text span{
+    font-weight: 600;
+    color: #2b2b2b;
+}
+.about-us-wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0rem 1rem;
+}
+.about-us-img{
+    background: url('../../assets/img/tolu.png');
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+}
+.about-us-right{
+    margin-top: 20px;
+    text-align: center;
+}
+.read-more-us-btn{
+    background: #2F54EB;
+    color: #fff;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+@media(min-width: 23rem){
+    .hero-img{
+        background-size: 25rem;
+        background-position: center center;
+    }
+    .model-item.item1{
+        left: 30px;
+        padding: 20px 17px 0px 17px;
+        font-size: 12px;
+    }
+    .model-item.item1 .icon-wrapper{
+        width: 40px;
+        height: 40px;
+        top: -20px;
+    }
+    .model-item.item2{
+        padding: 20px 10px 0px 10px;
+        font-size: 12px;
+    }
+    .model-item.item2 .icon-wrapper{
+        width: 40px;
+        height: 40px;
+    }
+    .model-item.item3{
+        left: 0;
+        bottom: 50px;
+        width: 190px;
+        padding: 0px 20px 0px 20px;
+        font-size: 12px;
+    }
+    .model-item.item3 .icon-wrapper{
+        width: 80px;
+        height: 40px;
+    }
+    .model-item.item4{
+        bottom: 150px;
+        width: 140px;
+        padding: 5px 20px 5px 20px;
+        font-size: 12px;
+    }
+    .model-item.item4 .icon-wrapper{
+        width: 35px;
+        height: 35px;
+    }
+}
+@media (min-width: 40rem){
+    .hero-img{
+        background-size: 27rem;
+        background-position: 100% center;
+    }
+    .model-item.item1{
+        left: 30px;
+    }
+    .model-item.item2{
+        top: 100px;
+        right: 370px;
+    }
+    .model-item.item3{
+        left: 200px;
+        bottom: 50px;
+    }
+    .model-item.item4{
+        bottom: 150px;
+    }
+    .about-us-img{
+        background-position: 150px -10px; 
+        height: 400px;
+        width: 100%;
+    }
+    .about-us-right{
+        font-size: 18px;
+    }
+    .read-more-us-btn{
+        border-radius: 15px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 60rem){
+    .home-landing{
+        height: 500px;
+        background: linear-gradient(120deg, rgba(255, 255, 255, 1) 40%, rgba(226, 226, 226, 0.7)), url("../../assets/img/pattern.jpg");
+        flex-direction: row;
+        padding: 0rem 4rem;
+    }
+    .home-landing .welcome-wrapper{
+        align-items: flex-start;
+    }
+    .home-landing .welcome-text{
+        margin: 50px 0px;
+        font-size: 38px;
+        text-align: start;
+    }
+    .hero-section{
+        position: relative;
+        top: 0;
+    }
+    .hero-img{
+        height: 100%;
+        width: 42vw;
+        background-size: cover; 
+        background-position: -50px;
+    }
+    .model-item.item1{
+        top: 70px;
+        left: 80px;
+    }
+    .model-item.item2{
+        top: 90px;
+        right: 0px;
+    }
+    .model-item.item3{
+        left: 0;
+        bottom: 70px;
+    }
+    .model-item.item4{
+        right: 0;
+        bottom: 170px;
+    }
+    .what-we-do-wrapper{
+        padding: 0rem 4rem;
+    }
+    .about-us-wrapper{
+        padding: 0rem 4rem;
+        flex-direction: row;
+    }
+    .about-us-img{
+        background-size: 400px;
+        background-repeat: no-repeat; 
+        background-position: center 5px; 
+        height: 400px;
+        width: 50%;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+    .about-us-right{
+        margin-top: 80px;
+        font-size: 16px;
+        text-align: start;
+        width: 50%;
+    }
+
+}
+
+@media(min-width: 80rem){
+    .home-landing{
+        height: 90vh;
+    }
+    .home-landing .welcome-text{
+        font-size: 45px;
+    }
+    .hero-img{
+        height: 100%;
+        width: 45vw;
+        background-position: 0px;
+    }
+    .model-item .icon-wrapper .icon{
+        height: 25px;
+    }
+    .model-item.item1{
+        top: 70px;
+        left: 80px;
+        width: 100px;
+        font-size: 14px;
+    }
+    .model-item.item1 .icon-wrapper{
+        border-radius: 15px;
+        width: 60px;
+        height: 60px;
+        top: -30px;
+    }
+    .model-item.item2{
+        top: 90px;
+        right: 0;
+        width: 100px;
+        font-size: 14px;
+    }
+    .model-item.item2 .icon-wrapper{
+        border-radius: 15px;
+        width: 60px;
+        height: 60px;
+        top: -30px;
+    }
+    .model-item.item3{
+        left: 0;
+        bottom: 70px;
+        width: 250px;
+        font-size: 14px;
+    }
+    .model-item.item3 .icon-wrapper{
+        border-radius: 15px;
+        width: 80px;
+        height: 50px;
+    }
+    .model-item.item4{
+        right: 0;
+        bottom: 270px;
+        width: 180px;
+        font-size: 16px;
+    }
+    .model-item.item4 .icon-wrapper{
+        border-radius: 15px;
+        width: 45px;
+        height: 45px;
+    }
+    .about-us-right{
+        font-size: 18px;
+    }
+}
