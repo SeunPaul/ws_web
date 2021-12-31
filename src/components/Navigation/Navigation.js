@@ -43,12 +43,12 @@ const Navigation = ({page})=>{
                 <Link onClick = {()=>onChangePage("Contact")} className="web-list_wrapper" to ="/contact">
                    <p className={`web_nav-list_item${navPage === 'Contact'? ' webactive': ""}`}>Contact Us</p>
                 </Link>
-                <span onClick = {()=>onChangePage("Mock")} className="web-list_wrapper">
+                <a onClick = {()=>onChangePage("Mock")} className="web-list_wrapper" href="https://mockexam.waltersamservices.com">
                    <p className={`web_nav-list_item${navPage === 'Mock'? ' webactive': ""}`}>Mock Exams</p>
-                </span>
-                <Link onClick = {()=>onChangePage("Blog")} className="web-list_wrapper" to ="/blog">
+                </a>
+                <a onClick = {()=>onChangePage("Blog")} className="web-list_wrapper" href="https://blog.waltersamservices.com">
                     <p className={`web_nav-list_item${navPage === 'Blog'? ' webactive': ""}`}>Blog</p>
-                </Link>
+                </a>
             </div>
         </div>
         </>

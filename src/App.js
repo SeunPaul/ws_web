@@ -6,6 +6,7 @@ import Products from './pages/Products/Products';
 import Team from './pages/Team/Team';
 import Contact from './pages/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import 'animate.css'
 import './App.css';
 
 const App = ()=>{
@@ -30,8 +31,8 @@ const App = ()=>{
                     </Route>
                     <Redirect to = "/"/>
                 </Switch>
+                <Footer/>
             </Router>
-            <Footer/>
         </div>
     )
 }

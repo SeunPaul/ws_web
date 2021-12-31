@@ -1,0 +1,23 @@
+.product-landing{
+    height: 300px;
+}
+.product-landing img{
+    height: 300px;
+    object-fit: cover;
+}
+.product-select{
+    padding: 40px 20px;
+    border-bottom: 1px solid #CFCFCF;
+}
+.product-select select{
+    background: #f0f0f0;
+    border: none;
+    height: 40px;
+    width: 270px;
+    padding: 0px 20px;
+    font-size: 14px;
+}
+.home-our-products-item{
+    height: 300px;
+    width: 300px;
+}

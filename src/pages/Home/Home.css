@@ -4,7 +4,7 @@
     background: linear-gradient(360deg, rgba(255, 255, 255, 1) 40%, rgba(250, 250, 250, 0.9)), url("../../assets/img/pattern.jpg");
     display: flex;
     flex-direction: column-reverse;
-    padding: 0rem 1rem;
+    padding: 0rem;
 }
 .home-landing .welcome-wrapper{
     display: flex;
@@ -15,6 +15,7 @@
 .home-landing .welcome-text{
     margin: 30px 0px;
     font-size: 25px;
+    font-weight: 900;
     text-align: center;
 }
 .home-landing .contact-us-btn{
@@ -29,6 +30,9 @@
     font-weight: 500;
     font-size: 14px;
 }
+.home-landing .contact-us-btn:hover{
+    box-shadow: 1px 1px 8px #2F54EBee;
+}
 .hero-section{
     position: relative;
     top: 50px;
@@ -37,10 +41,10 @@
 .hero-img{
     width: 100%;
     height: 100%;
-    background-image: url("../../assets/img/lanre.png");
     background-size: cover;
-    background-position: -70px center;
+    background-position: center;
     background-repeat: no-repeat;
+    transition: all ease-in-out .8s;
 }
 .model-item{
     position: absolute;
@@ -48,7 +52,7 @@
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(3px);
     border-radius: 15px;
-    padding: 10px;
+    padding: 25px 15px 15px 15px;
     display: flex;
     cursor: pointer;
 }
@@ -58,14 +62,15 @@
 .model-item .icon-wrapper .icon{
     height: 17px;
 }
+.model-item p{
+    margin: 0;
+}
 .model-item.item1{
     top: 20px;
     left: 10px;
-    width: 70px;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10px 10px 0px 10px;
     font-weight: 600;
     font-size: 10px;
 }
@@ -83,11 +88,9 @@
 .model-item.item2{
     top: 20px;
     right: 0;
-    width: 70px;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10px 5px 0px 5px;
     font-weight: 600;
     font-size: 10px;
 }
@@ -105,10 +108,10 @@
 .model-item.item3{
     left: 0;
     bottom: 40px;
-    width: 150px;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 0px 17px 0px 20px;
+    width: 190px;
+    padding: 10px 15px 10px 15px;
     font-weight: 600;
     font-size: 10px;
 }
@@ -124,10 +127,10 @@
 .model-item.item4{
     right: 0;
     bottom: 130px;
-    width: 120px;
+    width: 160px;
     align-items: center;
     justify-content: space-between;
-    padding: 2px 17px 2px 17px;
+    padding: 10px 15px 10px 15px;
     font-weight: 600;
     font-size: 11px;
 }
@@ -141,14 +144,17 @@
     align-items: center;
 }
 .home-what-we-do,
-.home-waltersamite,
 .home-benefits{
     padding-top: 100px;
+}
+.home-waltersamite{
+    margin-top: 100px;
 }
 .section-description{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 .section-description h3{
     margin: 0;
@@ -166,28 +172,31 @@
 .section-subdescription{
     text-align: center;
     font-style: italic;
+    margin-top: 20px;
 }
 .what-we-do-wrapper{
-    padding: 0rem 1rem;
+    padding: 40px 1rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 80px;
+    margin-top: 40px;
+    padding-top: 40px;
+    overflow: hidden;
 }
 .what-we-do-plaque{
     position: relative;
     width: 300px;
     text-align: center;
-    background: #FBFBFF;
+    background: #F5F5FF;
     padding: 50px 20px 20px 20px;
     border-radius: 20px;
     font-size: 15px;
     margin-bottom: 100px; 
 }
 .what-we-do-plaque .icon-wrapper{
-    border-radius: 10px;
-    width: 30px;
-    height: 30px;
+    border-radius: 15px;
+    width: 55px;
+    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,7 +204,7 @@
     top: -25px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 10px;
+    padding: 15px;
 }
 .what-we-do-plaque.plaque1 .icon-wrapper{
     background: #FF5A5F;
@@ -215,10 +224,13 @@
     flex-direction: column;
     position: relative;
     padding: 0rem 1rem;
+    justify-content: center;
+    overflow: hidden;
 }
 .about-us-img{
-    background: url('../../assets/img/tolu.png');
+    background: url('https://res.cloudinary.com/ds5l1k3bl/image/upload/v1640905709/DSC_9920_u3isho.jpg');
     background-size: cover;
+    border-radius: 30px; 
     height: 400px;
     width: 100%;
     margin-top: 50px;
@@ -230,32 +242,232 @@
 .read-more-us-btn{
     background: #2F54EB;
     color: #fff;
-    border-radius: 13px;
+    border-radius: 15px;
     border: none;
     cursor: pointer;
-    height: 40px;
+    height: 50px;
     width: 150px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 14px;
     margin-top: 20px;
 }
+.read-more-us-btn:hover{
+    box-shadow: 1px 1px 8px #2F54EBee;
+}
+.home-waltersamite{
+    position: relative;
+    background-color: #2F54EB;
+    padding: 50px 0px; 
+}
+.home-waltersamite .particles canvas{
+    position: absolute !important;
+}
+.home-waltersamite h3, .home-waltersamite p{
+    color: #fff !important;
+}
+.home-waltersamite .section-description-bar{
+    background: #fff;
+}
+.waltersamite-wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0rem 1rem;
+    overflow: hidden;
+}
+.waltersamite-img{
+    background: url('../../assets/img/waltersamite.png');
+    background-size: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    margin: 50px 0px;
+}
+.waltersamite-right{
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 20px 0px 20px 40px;
+}
+.waltersamite-right .list-item{
+    border-left: 2px dotted #8EA3FB;
+    padding: 30px 20px;
+    position: relative;
+}
+.waltersamite-right .list-tag{
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 40px;
+}
+.waltersamite-right .list-number{
+    color: #8EA3FB !important;
+    font-size: 30px;
+    margin: 0;
+}
+.waltersamite-right .list-text{
+    margin: 0
+}
+.waltersamite-btn{
+    background: #fff;
+    color: #2F54EB;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.home-benefits{
+    background-color: #F5F5FF;
+    padding: 50px 1rem;
+    overflow: hidden;
+}
+.home-benefits .section-description{
+    margin-bottom: 50px;
+}
+.home-benefits .benefit-item{
+    display: flex;
+    align-items: center;
+}
+.home-benefits .mark-icon{
+    width: 13px;
+    margin-right: 10px; 
+}
+.home-event-images{
+    position: relative;
+}
+.home-event-images-wrapper{
+    position: relative;
+    width: 100%;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-event-images-el1{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    border-top-right-radius: 30px;
+    border-top: 1px dashed red;
+    border-right: 1px dashed red;
+}
+.home-event-images-el2{
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    height: 70px;
+    width: 70px;
+    border-bottom-left-radius: 30px;
+    border-bottom: 1px dashed blue;
+    border-left: 1px dashed blue;
+}
+.home-event-images-wrapper .carousel{
+    width: 90%;
+}
+.home-event-images-wrapper .carousel,
+.home-event-images-wrapper .carousel-inner{
+    border-radius: 30px;
 
-
-
-
-
-
+}
+.home-event-images-wrapper img{
+    height: 500px;
+    object-fit: cover;
+}
+.home-our-products-wrapper{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.home-our-products-item{
+    margin: 40px;
+    text-align: center;
+}
+.home-our-products-item img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.home-our-products-item p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.home-our-products-item p:nth-child(2){
+    font-weight: bold;
+    font-size: 14px;
+}
+.home-our-products-btn{
+    text-align: center;
+}
+.home-reviews{
+    padding: 0rem 1rem;
+    padding-top: 100px;
+}
+.home-reviews-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin-top: 50px;
+    overflow: hidden;
+}
+.home-reviews-item{
+    position: relative;
+    width: 350px;
+    background: #F5F5FF;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.home-reviews-quote{
+    width: 30px;
+    height: 30px;
+}
+.home-reviews-item p{
+    font-size: 14px;
+    margin: 20px 0px;
+}
+.home-reviews-item img{
+    height: 50px;
+    width: 50px;
+}
+.home-reviews-item-avatar{
+    display: flex;
+    align-items: center;
+}
+.home-reviews-item-avatar p{
+    margin: 0 0 0 10px;
+}
+.home-reviews-item-avatar p:first-child{
+    font-weight: bold;
+}
 
 
 @media(min-width: 23rem){
+    .home-landing{
+        padding: 0rem 1rem;
+    }
     .hero-img{
         background-size: 25rem;
         background-position: center center;
     }
     .model-item.item1{
         left: 30px;
-        padding: 20px 17px 0px 17px;
         font-size: 12px;
     }
     .model-item.item1 .icon-wrapper{
@@ -264,7 +476,6 @@
         top: -20px;
     }
     .model-item.item2{
-        padding: 20px 10px 0px 10px;
         font-size: 12px;
     }
     .model-item.item2 .icon-wrapper{
@@ -274,9 +485,8 @@
     .model-item.item3{
         left: 0;
         bottom: 50px;
-        width: 190px;
-        padding: 0px 20px 0px 20px;
         font-size: 12px;
+        width: 220px;
     }
     .model-item.item3 .icon-wrapper{
         width: 80px;
@@ -284,8 +494,8 @@
     }
     .model-item.item4{
         bottom: 150px;
-        width: 140px;
-        padding: 5px 20px 5px 20px;
+        width: 170px;
+        padding: 7px 15px 7px 15px;
         font-size: 12px;
     }
     .model-item.item4 .icon-wrapper{
@@ -293,6 +503,7 @@
         height: 35px;
     }
 }
+
 @media (min-width: 40rem){
     .hero-img{
         background-size: 27rem;
@@ -312,23 +523,29 @@
     .model-item.item4{
         bottom: 150px;
     }
-    .about-us-img{
-        background-position: 150px -10px; 
-        height: 400px;
-        width: 100%;
+    .about-us-img{ 
+        width: 60%;
     }
     .about-us-right{
         font-size: 18px;
     }
-    .read-more-us-btn{
-        border-radius: 15px;
-        height: 50px;
+    .home-event-images-wrapper{
+        height: 700px;
+    }
+    .home-event-images-wrapper .carousel{
+        width: 80%;
+    }
+    .home-event-images-el1{
+        right: 50px;
+    }
+    .home-event-images-el2{
+        left: 50px;
     }
 }
 
 @media (min-width: 60rem){
     .home-landing{
-        height: 500px;
+        height: 520px;
         background: linear-gradient(120deg, rgba(255, 255, 255, 1) 40%, rgba(226, 226, 226, 0.7)), url("../../assets/img/pattern.jpg");
         flex-direction: row;
         padding: 0rem 4rem;
@@ -349,11 +566,11 @@
         height: 100%;
         width: 42vw;
         background-size: cover; 
-        background-position: -50px;
+        background-position: 0px;
     }
     .model-item.item1{
         top: 70px;
-        left: 80px;
+        left: 40px;
     }
     .model-item.item2{
         top: 90px;
@@ -368,20 +585,18 @@
         bottom: 170px;
     }
     .what-we-do-wrapper{
-        padding: 0rem 4rem;
+        padding: 40px 4rem;
     }
     .about-us-wrapper{
         padding: 0rem 4rem;
         flex-direction: row;
     }
     .about-us-img{
-        background-size: 400px;
-        background-repeat: no-repeat; 
-        background-position: center 5px; 
+        background-size: cover; 
         height: 400px;
-        width: 50%;
+        width: 40%;
         margin-top: 50px;
-        margin-right: 20px;
+        margin-right: 40px;
     }
     .about-us-right{
         margin-top: 80px;
@@ -389,12 +604,24 @@
         text-align: start;
         width: 50%;
     }
-
+    .waltersamite-wrapper{
+        flex-direction: row;
+        padding: 3rem 4rem;
+    }
+    .home-benefits{
+        background-color: #F5F5FF;
+        padding: 50px 4rem; 
+    }
+    .home-reviews{
+        padding: 0rem 4rem;
+        padding-top: 100px;
+    }
+    
 }
 
-@media(min-width: 80rem){
+@media (min-width: 80rem){
     .home-landing{
-        height: 90vh;
+        height: 620px;
     }
     .home-landing .welcome-text{
         font-size: 45px;
@@ -402,7 +629,7 @@
     .hero-img{
         height: 100%;
         width: 45vw;
-        background-position: 0px;
+        background-position: 0px -20px;
     }
     .model-item .icon-wrapper .icon{
         height: 25px;
@@ -410,25 +637,27 @@
     .model-item.item1{
         top: 70px;
         left: 80px;
-        width: 100px;
+        width: 130px;
+        padding: 30px 10px 15px 10px;
         font-size: 14px;
     }
     .model-item.item1 .icon-wrapper{
         border-radius: 15px;
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         top: -30px;
     }
     .model-item.item2{
         top: 90px;
         right: 0;
-        width: 100px;
+        width: 120px;
+        padding: 30px 10px 15px 10px;
         font-size: 14px;
     }
     .model-item.item2 .icon-wrapper{
         border-radius: 15px;
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         top: -30px;
     }
     .model-item.item3{
@@ -439,13 +668,14 @@
     }
     .model-item.item3 .icon-wrapper{
         border-radius: 15px;
-        width: 80px;
+        width: 95px;
         height: 50px;
     }
     .model-item.item4{
         right: 0;
         bottom: 270px;
-        width: 180px;
+        width: 210px;
+        padding: 7px 15px 7px 12px;
         font-size: 16px;
     }
     .model-item.item4 .icon-wrapper{
@@ -454,6 +684,14 @@
         height: 45px;
     }
     .about-us-right{
-        font-size: 18px;
+        font-size: 16px;
+    }
+    .waltersamite-img{
+        background-size: 450px;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+        margin: 50px 0px;
     }
 }

@@ -1,0 +1,98 @@
+.team-landing{
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(0deg, #242424 0%, rgba(0, 0, 0, 0) 80%), url("https://res.cloudinary.com/ds5l1k3bl/image/upload/v1640905798/DSC_9866_inower.jpg");
+    background-size: cover; 
+    background-position-x: center;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0rem 1rem;
+}
+.team-landing p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    width: 300px;
+    text-align: center;
+}
+.team-landing span{
+    color: #2F54EB;
+}
+.team-tutor-teams,
+.team-tech-teams,
+.team-core-teams{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    justify-content: center;
+}
+.team-tutor-team,
+.team-tech-team,
+.team-core-team{
+    margin: 20px 0px;
+}
+.team-tutor-team img,
+.team-tech-team img,
+.team-core-team img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    object-position: center -10px;
+}
+.team-tutor-team p,
+.team-tech-team p,
+.team-core-team p{
+    margin: 0;
+}
+.team-tutor-team p:nth-child(2),
+.team-tech-team p:nth-child(2),
+.team-core-team p:nth-child(2){
+    font-weight: bold;
+    margin-top: 20px;
+}
+.team-tutor-team p:last-child,
+.team-tech-team p:last-child,
+.team-core-team p:last-child{
+    font-size: 14px;
+}
+.team-tutor-teams{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.team-tutor-teams select{
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 0px 20px;
+}
+
+
+@media (min-width: 26rem){
+    .team-tutor-team img,
+    .team-tech-team img,
+    .team-core-team img{
+        width: 350px;
+        height: 350px;
+    }
+    .team-tutor-team,
+    .team-tech-team,
+    .team-core-team{
+        margin: 20px 20px;
+    }
+    .team-tutor-teams select{
+        height: 50px;
+        width: 350px;
+        border-radius: 20px;
+        padding: 0px 20px;
+    }
+    .team-tutor-teams{
+        flex-direction: row;
+        align-items: center;
+    }
+}
