@@ -17,7 +17,7 @@ const About = ()=>{
                 <p>About <span>Us</span></p>
             </div>
             <div className="about-us-text-wrapper">
-                <p>Waltersam Services is an Educational Organization that 
+                <p>Waltersam Services is an Edutech Organization that 
                     creates an enabling environment to help Aspirants 
                     and Students of all Nigerian Tertiary Institutions have an 
                     easy Academic Life.<br/><br/>
